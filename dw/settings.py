@@ -115,7 +115,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'upload', 'static'),
     os.path.join(BASE_DIR, 'accounts', 'static'),
 )
-STATIC_ROOT = "/staticfiles/"
+STATIC_ROOT = "staticfiles"
 
 MEDIA_URL = "/student/files/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'student-uploads')
