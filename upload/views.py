@@ -20,7 +20,7 @@ def create(request):
             print("nono")
     return redirect('index')
 
-# @login_required
+@login_required
 def teacher_admin(request):
     assignments = Assignment.objects.all().order_by('-timestamp')
     return render(request, 'teacher_admin.html', {'assign': assignments})
