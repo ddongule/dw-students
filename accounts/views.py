@@ -10,7 +10,7 @@ def login(request):
         user = auth.authenticate(request, username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('index')
+        return redirect('tcadmin')
         else:
             return render(request, 'login.html', {'error': '아이디 혹은 비밀번호가 잘못되었습니다.'})
     else:
