@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+
+{% if user.is_active %}
+    <div class="nav">
+        <div class="nav-right">
+            <a href="{% url 'logout' %}">로그아웃</a>
+        </div>
+    </div>
+{% else %}
+{% endif %}
+<div class="page-title">
+    <p>다원쌤 학생들 과제 ₍ᐢ•ﻌ•ᐢ₎ </p>
+</div>
+<div class="students">
+{% for i in assign %}
+    <div class="students-assignment">
+        <p class="name"><span class="name-bold">{{ i.name }}</span> 학생</p>
+        <img src="{{i.image.url}}">
+
+    </div>
+{% endfor %}
+</div>
+
+
+
+
+{% endblock %}
