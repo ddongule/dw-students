@@ -150,7 +150,7 @@ table {
 .students{
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
     margin: 3em;
 }
 .students-assignment {
@@ -172,14 +172,18 @@ table {
 
 
 @media screen and (max-width: 768px) { 
-    body { 
-        /* background-color: lightgreen;  */
-    } 
     .wrapper .main {
         margin: 3em auto;
     }
     .wrapper .main img {
         width: 300px;
+    }
+
+    .students {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fill,minmax(8rem,1fr));
+        margin: 3em;
     }
 }
 

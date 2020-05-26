@@ -51,3 +51,29 @@
     margin-top: 1rem;
     cursor: pointer;
   }
+
+
+@media screen and (max-width: 768px) { 
+    .accounts-container {
+        width: 100%;
+    }
+    .accounts-container form {
+        width: 300px;
+    }
+    .accounts-input-section .accounts-input {
+        display: block;
+        padding: 15px;
+        border-radius: 5px;
+        width: calc(100% - 30px);
+        min-width: calc(100% - 30px);
+        max-width: calc(100% - 30px);
+        font-size: 0.8em;
+        border: 1px solid #e2e6ea;
+    }
+
+    .accounts-btn {
+        width: calc(100% + 2px);
+        min-width: calc(100% + 2px);
+        max-width: calc(100% + 2px);
+    }
+}
